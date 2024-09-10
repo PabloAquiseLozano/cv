@@ -4,6 +4,10 @@
   --tertiary-color: rgb(233, 155, 10);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -25,20 +29,46 @@ body {
     min-height: 100vh;
 
     img {
-      max-height: 100vh;
+      height: 100%;
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
     }
   }
 
   .presentation {
+    color: aliceblue;
     width: 50%;
+    margin: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     h1 {
       font-size: 50px;
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 1em;
+      padding: 0;
+      text-decoration: none;
+      display: grid;
+      gap: 2em;
+      li {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+
+        i {
+          font-size: 30px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
     }
   }
 }
@@ -101,10 +131,6 @@ body {
       color: white;
       text-align: center;
       text-decoration: none;
-    }
-
-    a:hover {
-      background-color: #333;
     }
   }
 }
@@ -214,6 +240,54 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+.education {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  .content-education {
+    width: 90%;
+    height: 90%;
+    box-shadow: 0px 0px 44px 10px rgba(102, 97, 97, 0.6);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .schools {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+
+      .fya,
+      .gilda {
+        width: 100%;
+        display: flex;
+        gap: 2em;
+
+        li {
+          margin: 0.5em;
+        }
+
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+
+    h2 {
+      display: block;
+      margin: 2em;
+      border-bottom: 3px solid black;
     }
   }
 }
