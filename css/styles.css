@@ -43,6 +43,23 @@ body {
     flex-direction: column;
     justify-content: center;
 
+    .networks {
+      ul {
+        margin-top: 4em;
+        display: flex;
+        text-decoration: none;
+        gap: 5em;
+
+        a {
+          color: white;
+        }
+
+        i {
+          font-size: 60px;
+        }
+      }
+    }
+
     h1 {
       font-size: 50px;
       margin: 0;
@@ -173,6 +190,37 @@ body {
     h2 {
       margin: 0;
       border-bottom: 3px solid black;
+    }
+  }
+}
+
+.skills {
+  margin-bottom: 5em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    list-style-type: none;
+
+    li {
+      width: 20%;
+      display: grid;
+      gap: 0.5em;
+      text-align: center;
+    }
+    i {
+      font-size: 80px;
     }
   }
 }
